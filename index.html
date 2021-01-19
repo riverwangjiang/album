@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<title>纯CSS实现鼠标经过3D立体动态展示图片特效代码</title>
+	<link type="text/css" href="index.css" rel="stylesheet" />
+</head>
+
+<body>
+	<div class="box">
+		<ul class="minbox">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ul>
+		<ol class="maxbox">
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+			<li></li>
+		</ol>
+	</div>
+	<audio src="./1.mp3" loop></audio>
+	<script>
+		function audioAutoPlay() {
+			var audio = document.querySelector('audio');
+			audio.play();
+
+		}
+		document.addEventListener('touchstart', function () {
+
+			audioAutoPlay();
+		});
+		document.addEventListener('click', function () {
+
+			audioAutoPlay();
+		});
+	</script>
+</body>
+
+</html>
